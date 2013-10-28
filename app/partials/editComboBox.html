@@ -1,0 +1,9 @@
+<div class="input-append btn-group editComboBox-menu">
+    <input data-ng-style="inputStyle" class="form-control"  placeholder="{{placeholder}}" type="text" data-ng-model="username">
+    <a id="dropdownButton" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li data-ng-repeat="role in roles"><a href="#" data-ng-click="setSelectedItem($index)">{{role}}</a></li>
+    </ul>
+</div>

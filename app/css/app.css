@@ -1,0 +1,22 @@
+.input-append .btn.dropdown-toggle {
+    float: none;
+}
+
+.input-append > input[type='text']{
+    border-radius: 4px 0 0 4px;
+    margin-right: -4px;
+    width: 180px;
+    float:left;
+}
+
+.modal-body > .input-append .btn.dropdown-toggle {
+}
+
+.modal-body > .input-append > input[type='text']{
+}
+
+.editComboBox-menu .dropdown-menu{
+    left: auto !important;
+    right: 0 !important;
+}
+    

@@ -1,0 +1,8 @@
+<h1>Welcome to the top secret Area!</h1>
+
+<ul ng-repeat="node in leafNodes">
+
+</ul>
+<select id="worldstateLeafs" multiple="multiple" size="10" data-ng_model="selectedNode" 
+        data-ng-options=" node as getNodeText(node)
+        for node in leafNodes"></select>

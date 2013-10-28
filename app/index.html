@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="cismetApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+        <title>Cismet Web Template</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="lib/bootstrap-3.0.0/dist/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/signin.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../../assets/js/html5shiv.js"></script>
+          <script src="../../assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" data-ng-controller="SignInController">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Cismet Web Template</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a  data-ng-hide="!logInService.isLoggedIn()" class="dropdown-toggle" data-toggle="dropdown">Quick Menu <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href='#/r1'>Renderer 1</a></li>
+                                <li><a href='#/r2'>Renderer 2</a></li>
+                                <li><a href='#/r3'>Renderer 3</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Preferences</li>
+                                <li><a href='#/s1'>User Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div style="display:inline" data-ng-hide="logInService.isLoggedIn()">
+                            <div class="form-group">
+                                <!--<input  data-ng-model="username" type="text" placeholder="user@domain" class="form-control">-->
+                                <edit-combo-box width="166px" placeholder="User" data-ng-model="roles" username="username"></edit-combo-box>
+                            </div>
+                            <div class="form-group">
+                                <input  data-ng-model="password" type="password" placeholder="password" class="form-control">
+                            </div>
+                        </div>
+                        <div style="display:inline" data-ng-hide="!logInService.isLoggedIn()">
+                            <label class="checkbox">Logged in as: {{logInService.username}}</label>
+                        </div>
+                        <button data-ng-click="login()" class="btn btn-success">{{logInService.isLoggedIn() ? 'Sign out' : 'Sign in'}}</button>
+                        <label data-ng-hide="logInService.isLoggedIn() !== false" class="checkbox">
+                            <input data-ng-model="logInService.rememberMe" type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </form>
+                </div><!--/.navbar-collapse -->
+            </div>
+        </div>
+
+    <login-modal></login-modal>
+
+    <div data-ng-view></div>
+
+    <hr>
+
+    <footer >
+        <p>&copy; Cismet 2013</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery/jquery-2.0.3.js"></script>
+    <script src="lib/bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+    <script src="lib/angular-1.2.0-rc.2/angular.js"></script>
+    <script src="lib/angular-1.2.0-rc.2/angular-cookies.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular-route.js"></script>
+    <script src="../../commons/js/cids.js"></script>
+    <script src="../../commons/js/ng_http_backend.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>
