@@ -1,0 +1,246 @@
+/* 
+    Document   : cismet_renderer
+    Created on : 25.07.2013, 08:39:59
+    Author     : daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html {
+    background-color: #e1e1e1 !important;
+    height:100%;
+    /*min-height:100%;position:relative*/
+    /*background-color: #ff0000 !important;*/
+}
+
+body{
+    background-color: #e1e1e1 !important;
+        height:100%;
+    /*height:100%*/
+    /*background-color: #ff0000 !important;*/
+}
+
+.renderer{
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*z-index: 1050;*/
+    /*width: 560px;*/
+    /*margin-left: -280px;*/
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    *border: 1px solid #999;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    /*min-height: 350px;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+/*    margin: 10px 10px 10px 10px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1*/
+}
+
+.renderer-header{
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+    min-height: 30px;
+    background-image: linear-gradient(bottom, rgb(67,67,67) 43%, rgb(74,74,74) 64%);
+    background-image: -o-linear-gradient(bottom, rgb(67,67,67) 43%, rgb(74,74,74) 64%);
+    background-image: -moz-linear-gradient(bottom, rgb(67,67,67) 43%, rgb(74,74,74) 64%);
+    background-image: -webkit-linear-gradient(bottom, rgb(67,67,67) 43%, rgb(74,74,74) 64%);
+    background-image: -ms-linear-gradient(bottom, rgb(67,67,67) 43%, rgb(74,74,74) 64%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.43, rgb(67,67,67)),
+        color-stop(0.64, rgb(74,74,74))
+        );
+    background-color:#ff0000;
+    /*    -webkit-border-radius: 6px;*/
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.renderer-header h4{
+    color: #ffffff;
+}
+
+.renderer-header .close {
+    margin-top: 2px;
+}
+
+.renderer-header h3 {
+    margin: 0;
+    line-height: 30px;
+}
+
+.renderer-body {
+    /*position: relative;*/
+    /*max-height: 420px;*/
+    padding: 15px;
+    overflow-y: auto;
+    width: fit-content;
+    border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-image: linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -o-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -moz-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -webkit-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -ms-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.05, rgb(167,167,167)),
+        color-stop(0.35, rgb(204,204,204)),
+        color-stop(0.87, rgb(215,215,215))
+        );
+}
+
+.renderer-footer{
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 #ffffff;
+    -moz-box-shadow: inset 0 1px 0 #ffffff;
+    box-shadow: inset 0 1px 0 #ffffff;
+    min-height: 30px;
+    background-image: linear-gradient(bottom, rgb(76,76,76) 36%, rgb(101,101,101) 62%);
+    background-image: -o-linear-gradient(bottom, rgb(76,76,76) 36%, rgb(101,101,101) 62%);
+    background-image: -moz-linear-gradient(bottom, rgb(76,76,76) 36%, rgb(101,101,101) 62%);
+    background-image: -webkit-linear-gradient(bottom, rgb(76,76,76) 36%, rgb(101,101,101) 62%);
+    background-image: -ms-linear-gradient(bottom, rgb(76,76,76) 36%, rgb(101,101,101) 62%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.36, rgb(76,76,76)),
+        color-stop(0.62, rgb(101,101,101))
+        );
+}
+
+.renderer-footer:before,
+.renderer-footer:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.rendererMode input[type="text"] {
+    /*background: burlywood;*/
+    border: none;
+    background-color: #ffffff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.roundedPnl{
+    /*position: fixed;*/
+    /*top: 10%;*/
+    /*left: 50%;*/
+    /*z-index: 1050;*/
+    /*width: 560px;*/
+    /*margin-left: -280px;*/
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    *border: 1px solid #999;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    /*outline: none;*/
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+
+    background-image: linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -o-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -moz-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -webkit-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+    background-image: -ms-linear-gradient(top, rgb(167,167,167) 5%, rgb(204,204,204) 35%, rgb(215,215,215) 87%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.05, rgb(167,167,167)),
+        color-stop(0.35, rgb(204,204,204)),
+        color-stop(0.87, rgb(215,215,215))
+        );
+}
+.roundedPnlHeader{
+    padding: 4px 15px;
+    background: #3a3a3a;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.roundedPnlHeader label{
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.roundedPnlBody{
+    padding: 5px;
+}
+
+.roundedPnlFooter{
+    float: clear;
+}
+
+.roundContainer{
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form-horizontal .control-label{
+    text-align:left;
+}
+
+.form-horizontal .control-label {
+    text-align:left !important;
+}
+
+.rendererMode{
+    /*background-color: #ff0000 !important;*/
+    background-color: rgba(0,0,0,.0);
+    box-shadow: none;
+    border: none;
+
+}
